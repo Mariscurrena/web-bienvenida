@@ -1,0 +1,5 @@
+service:
+  name: web-bienvenida
+  identifier: webbienvenida
+  orgIdentifier: default
+  projectIdentifier: default_project
