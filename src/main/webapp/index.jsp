@@ -11,7 +11,7 @@
         color: #333;
       }
       .header {
-        background-color: #007FFF;
+        background-color: #69FFAA;
         color: white;
         padding: 15px 20px;
         text-align: center;
@@ -43,6 +43,7 @@
     </div>
     <div class="container">
       <h1>Your Partner in Payments</h1>
+      <h2>This is a harness deployment test</h2>
       <p>Providing innovative payment technology and software solutions worldwide.</p>
     </div>
   </body>
