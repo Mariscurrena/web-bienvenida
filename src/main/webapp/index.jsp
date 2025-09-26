@@ -23,7 +23,6 @@
       .header img {
         height: 50px; 
         margin-right: 15px;
-        /* 💥 SOLUCIÓN: Desatura (grayscale) y Aclara (brightness) para forzar el blanco */
         filter: grayscale(100%) brightness(200%); 
       }
       .container {
@@ -52,7 +51,8 @@
   <body>
     <div class="header">
       <img src="./GP.png" alt="Global Payments Logo">
-      <h2>Welcome to Global Payments - EVO Latam</h2>
+      <h2>Welcome to Global Payments</h2>
+      <h3>-EVO LatAm</h3>
     </div>
     <div class="container">
       <h1>Your Partner in Payments</h1>
