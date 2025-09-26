@@ -45,6 +45,11 @@
       <h1>Your Partner in Payments</h1>
       <h2>This is a harness deployment test</h2>
       <p>Providing innovative payment technology and software solutions worldwide.</p>
+      <ul>
+         <li>Automate deploy to Tomcat✅</li>
+         <li>Trigger set to repo push✅</li>
+         <li>SAST using Open Source (Provisional)</li>
+      </ul>
     </div>
   </body>
 </html>
