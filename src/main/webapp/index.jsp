@@ -11,7 +11,7 @@
         color: #333;
       }
       .header {
-        background-color: #69FFAA;
+        background-color: #004d9c;
         color: white;
         padding: 15px 20px;
         text-align: center;
@@ -38,7 +38,7 @@
   </head>
   <body>
     <div class="header">
-      <img src="https://www.globalpaymentsinc.com/en/assets/images/header-logo.svg" alt="Global Payments Logo">
+      <img src="./GP.png" alt="Global Payments Logo">
       <h2>Welcome to Global Payments (EVO Latam BU)</h2>
     </div>
     <div class="container">
