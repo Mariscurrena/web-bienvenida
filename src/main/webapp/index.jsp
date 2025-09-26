@@ -50,7 +50,8 @@
   </head>
   <body>
     <div class="header">
-      <h2>Welcome to . . . . . . . </h2>
+      <h2>Welcome to </h2>
+      <h1>__</h1>
       <img src="./GP.png" alt="Global Payments Logo">
     </div>
     <div class="container">
