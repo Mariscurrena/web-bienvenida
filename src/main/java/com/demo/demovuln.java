@@ -1,4 +1,4 @@
-package com.demo;
+/*package com.demo;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -31,4 +31,4 @@ public class DemoVulnerable extends HttpServlet {
             }
         }
     }
-}
+}**/
