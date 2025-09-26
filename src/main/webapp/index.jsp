@@ -9,7 +9,7 @@
         margin: 0;
         padding: 0;
         background-color: #f4f4f4;
-        color: #ffffff;
+        color: #111111;
       }
       .header {
         background-color: #004d9c;
@@ -23,7 +23,7 @@
       .header img {
         height: 50px; 
         margin-right: 15px;
-        filter: grayscale(100%) brightness(200%); 
+        filter: invert(100%) sepia(100%) saturate(0) brightness(200%);
       }
       .container {
         max-width: 800px;
