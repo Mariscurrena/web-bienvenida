@@ -32,3 +32,35 @@ public class DemoVulnerable extends HttpServlet {
         }
     }
 }**/
+
+
+/// FIX
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+public class DemoSeguro extends HttpServlet {
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) 
+           throws ServletException, IOException {
+        
+        String filename = request.getParameter("filename"); 
+        
+        if (filename != null) {
+            
+            try {
+                // FIX: Send command and args as separate elements of an array
+                String[] commandArray = new String[]{"cat", filename};
+                
+                Process process = Runtime.getRuntime().exec(commandArray); 
+                
+                response.getWriter().println("Comando ejecutado con éxito.");
+                
+            } catch (IOException e) {
+                response.getWriter().println("Error al ejecutar el comando: " + e.getMessage());
+            }
+        }
+    }
+}
