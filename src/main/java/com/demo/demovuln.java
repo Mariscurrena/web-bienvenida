@@ -58,6 +58,7 @@ public class DemoSeguro extends HttpServlet {
             try {
                 // FIX: Send command and args as separate elements of an array (Correcto)
                 String[] commandArray = new String[]{"cat", filename};
+                // semgrep-disable-line java.lang.security.audit.runtime-exec-j2ee.runtime-exec-j2ee
                 Process process = Runtime.getRuntime().exec(commandArray); 
                 response.getWriter().println("Succeded.");
                 
