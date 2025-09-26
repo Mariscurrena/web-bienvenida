@@ -2,9 +2,7 @@
 <html>
   <head>
     <title>Global Payments - Welcome</title>
-    <!-- Intentional XSS -->
-     <% String username = request.getParameter("user"); %>
-    <meta name="description" content="Welcome, <%= username %>">
+    <meta name="description" content="Welcome page">
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -23,8 +21,9 @@
         justify-content: center;
       }
       .header img {
-        height: 50px; /* Adjust as needed */
+        height: 50px; 
         margin-right: 15px;
+        filter: invert(100%); 
       }
       .container {
         max-width: 800px;
@@ -49,11 +48,10 @@
       <h2>This is a harness deployment test</h2>
       <p>Providing innovative payment technology and software solutions worldwide.</p>
       <ul>
-         <li>Automate deploy to Tomcat✅</li>
-         <li>Trigger set to repo push✅</li>
-         <li>SAST using Open Source (Provisional until Snyk release)✅</li>
+          <li>Automate deploy to Tomcat✅</li>
+          <li>Trigger set to repo push✅</li>
+          <li>SAST using Open Source (Provisional until Snyk release)✅</li>
       </ul>
     </div>
   </body>
 </html>
-
