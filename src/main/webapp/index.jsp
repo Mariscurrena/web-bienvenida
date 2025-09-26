@@ -50,7 +50,7 @@
   </head>
   <body>
     <div class="header">
-      <h2>Welcome to </h2>
+      <h2>Welcome to . . . . . . . </h2>
       <img src="./GP.png" alt="Global Payments Logo">
     </div>
     <div class="container">
@@ -58,9 +58,9 @@
       <h2>This is a harness deployment test</h2>
       <p>Providing innovative payment technology and software solutions worldwide.</p>
       <ul>
-          <li>Automate deploy to Tomcat✅</li>
-          <li>Trigger set when making a push or pull request to the repository✅</li>
-          <li>SAST using Open Source (Provisional until Snyk release)✅</li>
+          <li>Automate deploy to Tomcat ✅</li>
+          <li>Trigger set when making a push or pull request to the repository ✅</li>
+          <li>SAST using Open Source (Provisional until Snyk release) ✅</li>
       </ul>
       
       <div class="devops-section">
