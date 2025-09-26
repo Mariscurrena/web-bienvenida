@@ -50,16 +50,19 @@ public class DemoSeguro extends HttpServlet {
         
         if (filename != null) {
             
+            if (!filename.matches("^[a-zA-Z0-9_\\-\\.]+$")) {
+                 response.getWriter().println("Error: Invalid Name.");
+                 return; 
+            }
+            
             try {
-                // FIX: Send command and args as separate elements of an array
+                // FIX: Send command and args as separate elements of an array (Correcto)
                 String[] commandArray = new String[]{"cat", filename};
-                
                 Process process = Runtime.getRuntime().exec(commandArray); 
-                
-                response.getWriter().println("Comando ejecutado con éxito.");
+                response.getWriter().println("Succeded.");
                 
             } catch (IOException e) {
-                response.getWriter().println("Error al ejecutar el comando: " + e.getMessage());
+                response.getWriter().println("Error: " + e.getMessage());
             }
         }
     }
