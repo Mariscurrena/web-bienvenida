@@ -59,7 +59,7 @@
       <p>Providing innovative payment technology and software solutions worldwide.</p>
       <ul>
           <li>Automate deploy to Tomcat✅</li>
-          <li>Trigger set to repo push✅</li>
+          <li>Trigger set when making a push or pull request to the repository✅</li>
           <li>SAST using Open Source (Provisional until Snyk release)✅</li>
       </ul>
       
