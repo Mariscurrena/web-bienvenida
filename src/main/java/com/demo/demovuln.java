@@ -32,39 +32,3 @@ public class DemoVulnerable extends HttpServlet {
         }
     }
 }**/
-
-
-/// FIX
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-
-public class DemoSeguro extends HttpServlet {
-
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) 
-           throws ServletException, IOException {
-        
-        String filename = request.getParameter("filename"); 
-        
-        if (filename != null) {
-            
-            if (!filename.matches("^[a-zA-Z0-9_\\-\\.]+$")) {
-                 response.getWriter().println("Error: Invalid Name.");
-                 return; 
-            }
-            
-            try {
-                // FIX: Send command and args as separate elements of an array (Correcto)
-                String[] commandArray = new String[]{"cat", filename};
-                // semgrep-disable-line java.lang.security.audit.runtime-exec-j2ee.runtime-exec-j2ee
-                Process process = Runtime.getRuntime().exec(commandArray); 
-                response.getWriter().println("Succeded.");
-                
-            } catch (IOException e) {
-                response.getWriter().println("Error: " + e.getMessage());
-            }
-        }
-    }
-}
