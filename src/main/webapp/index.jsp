@@ -23,7 +23,8 @@
       .header img {
         height: 50px; 
         margin-right: 15px;
-        filter: invert(100%); 
+        /* 💥 SOLUCIÓN: Desatura (grayscale) y Aclara (brightness) para forzar el blanco */
+        filter: grayscale(100%) brightness(200%); 
       }
       .container {
         max-width: 800px;
@@ -35,6 +36,16 @@
       }
       h1 {
         color: #004d9c;
+      }
+      .devops-section {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid #ccc;
+      }
+      .devops-section img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
       }
     </style>
   </head>
@@ -52,6 +63,12 @@
           <li>Trigger set to repo push✅</li>
           <li>SAST using Open Source (Provisional until Snyk release)✅</li>
       </ul>
+      
+      <div class="devops-section">
+        <h2>Secure DevOps</h2>
+        <p>Engineers, architects, and developers with a passion for security, guided by DevOps principles and the highest security standards. We aim to mitigate barriers between development and security, making the process more efficient and secure.</p>
+        <img src="./engineer.png" alt="Secure DevOps Engineer">
+      </div>
     </div>
   </body>
 </html>
