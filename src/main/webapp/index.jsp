@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>Global Payments - Welcome</title>
+    <!-- Intentional XSS -->
+     <% String username = request.getParameter("user"); %>
+    <meta name="description" content="Welcome, <%= username %>">
     <style>
       body {
         font-family: Arial, sans-serif;
