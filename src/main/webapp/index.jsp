@@ -36,6 +36,9 @@
       h1 {
         color: #004d9c;
       }
+      .header div{
+        color: white;
+      }
       .devops-section {
         margin-top: 30px;
         padding-top: 20px;
