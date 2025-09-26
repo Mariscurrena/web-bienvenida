@@ -51,7 +51,7 @@
       <ul>
          <li>Automate deploy to Tomcat✅</li>
          <li>Trigger set to repo push✅</li>
-         <li>SAST using Open Source (Provisional)</li>
+         <li>SAST using Open Source (Provisional)✅</li>
       </ul>
     </div>
   </body>
