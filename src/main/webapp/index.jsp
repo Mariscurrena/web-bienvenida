@@ -36,9 +36,6 @@
       h1 {
         color: #004d9c;
       }
-      .header div{
-        color: white;
-      }
       .devops-section {
         margin-top: 30px;
         padding-top: 20px;
@@ -53,7 +50,7 @@
   </head>
   <body>
     <div class="header">
-      <h1>Welcome to </h1>
+      <h2>Welcome to </h2>
       <img src="./GP.png" alt="Global Payments Logo">
     </div>
     <div class="container">
