@@ -39,7 +39,7 @@
   <body>
     <div class="header">
       <img src="./GP.png" alt="Global Payments Logo">
-      <h2>Welcome to Global Payments (EVO Latam BU)</h2>
+      <h2>Welcome to Global Payments - EVO Latam</h2>
     </div>
     <div class="container">
       <h1>Your Partner in Payments</h1>
