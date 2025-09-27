@@ -94,8 +94,8 @@
 
     <div class="container">
       <h1>Your Partner in Payments</h1>
-      <h2>This is a harness deployment test</h2>
       <p>Providing innovative payment technology and software solutions worldwide.</p>
+      <h2>This is a harness deployment test</h2>
       <ul>
           <li>Automate deploy to Tomcat ✅</li>
           <li>Trigger set when making a push or pull request to the repository ✅</li>
