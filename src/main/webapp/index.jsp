@@ -6,13 +6,13 @@
     <style>
       @keyframes softBlink {
         0% {
-          filter: drop-shadow(0 4px 8px rgba(0, 122, 255, 0.3));
+          filter: drop-shadow(0 0 10px rgba(0, 122, 255, 0.3));
         }
         50% {
-          filter: drop-shadow(0 4px 12px rgba(255, 255, 255, 0.8));
+          filter: drop-shadow(0 0 18px rgba(0, 122, 255, 0.8));
         }
         100% {
-          filter: drop-shadow(0 4px 8px rgba(0, 122, 255, 0.3));
+          filter: drop-shadow(0 0 10px rgba(0, 122, 255, 0.3));
         }
       }
       body {
@@ -68,7 +68,7 @@
   <body>
     <div class="header">
       <h2>Welcome to </h2>
-      <h1>__</h1>
+      <h1>.</h1>
       <img src="./GP.png" alt="Global Payments Logo">
     </div>
     <div class="container">
