@@ -84,7 +84,7 @@
       <h1>.</h1>
       <img src="./GP.png" alt="Global Payments Logo">
       <h1>..</h1>
-      <h2><%= greeting %></h2>
+      <h4><%= greeting %></h4>
     </div>
 
     <div class="container">
