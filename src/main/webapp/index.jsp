@@ -85,6 +85,7 @@
       <h1>.</h1>
       <img src="./GP.png" alt="Global Payments Logo">
     </div>
+
     <div class="container">
       <h1>Your Partner in Payments</h1>
       <h2>This is a harness deployment test</h2>
