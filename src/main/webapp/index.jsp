@@ -101,14 +101,23 @@
         <p>Engineers, architects, and developers with a passion for security, guided by DevOps principles and the highest security standards. We aim to mitigate barriers between development and security, making the process more efficient and secure.</p>
         <img src="./engineer.png" alt="Secure DevOps Engineer">
       </div>
-      <ul>
-        <li> Website Loaded At: : 
-          <strong><%= new java.util.Date() %></strong>
+      <div class="client-section">
+        <h2>Client Information</h2>
+        <ul>
+          <li> Website Loaded At: : 
+            <strong><%= new java.util.Date() %></strong>
+          </li>
+          <li> Application Server: 
+            <strong><%= application.getServerInfo() %></strong>
+          </li>
+          <li> Client Remote IP Direction
+            <strong><%= request.getRemoteAddr() %></strong>
+          </li>
+          <li> Client Browser / User-Agent: 
+            <strong><%= request.getHeader("User-Agent") %></strong>
         </li>
-        <li> Client Remote IP Direction
-           <strong><%= request.getRemoteAddr() %></strong>
-        </li>
-      </ul>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
