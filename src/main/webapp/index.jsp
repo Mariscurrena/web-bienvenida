@@ -52,7 +52,7 @@
       h2 {
         font-size: 1.75em;
       }
-      .devops-section {
+      .devops-section .client-section{
         margin-top: 30px;
         padding-top: 20px;
         border-top: 1px solid #ccc;
