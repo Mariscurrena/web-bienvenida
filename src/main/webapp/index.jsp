@@ -4,12 +4,24 @@
     <title>Global Payments - Welcome</title>
     <meta name="description" content="Welcome page">
     <style>
+    @keyframes softBlink {
+        0% {
+          filter: drop-shadow(0 4px 8px rgba(0, 122, 255, 0.3));
+        }
+        50% {
+          filter: drop-shadow(0 4px 12px rgba(0, 122, 255, 0.8));
+        }
+        100% {
+          filter: drop-shadow(0 4px 8px rgba(0, 122, 255, 0.3));
+        }
+      }
       body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
         background-color: #f4f4f4;
         color: #111111;
+        font-size: 1.25em;
       }
       .header {
         background-color: #004d9c;
@@ -33,9 +45,13 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         text-align: center;
       }
-      h1 {
-        color: #004d9c;
-      }
+      h1 { 
+        color: #004d9c; 
+        font-size: 2.5em; 
+      }
+      h2 {
+        font-size: 1.75em;
+      }
       .devops-section {
         margin-top: 30px;
         padding-top: 20px;
@@ -45,7 +61,7 @@
         max-width: 50%;
         height: auto;
         margin-top: 20px;
-        filter: drop-shadow(0 4px 8px rgba(0, 122, 255, 0.3)); 
+        animation: softBlink 3s infinite alternate;
       }
     </style>
   </head>
