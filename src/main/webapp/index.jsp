@@ -67,11 +67,6 @@
   </head>
   <body>
     <div class="header">
-      <h2>Welcome to </h2>
-      <h1>.</h1>
-      <img src="./GP.png" alt="Global Payments Logo">
-    </div>
-    <div class="container">
       <%
           java.util.Calendar calendar = java.util.Calendar.getInstance();
           int hora = calendar.get(java.util.Calendar.HOUR_OF_DAY);
@@ -85,7 +80,12 @@
               greeting = "Good Evening!";
           }
       %>
-      <h1><%= greeting %></h1>
+      <h2><%= greeting %></h2>
+      <h2>Welcome to </h2>
+      <h1>.</h1>
+      <img src="./GP.png" alt="Global Payments Logo">
+    </div>
+    <div class="container">
       <h1>Your Partner in Payments</h1>
       <h2>This is a harness deployment test</h2>
       <p>Providing innovative payment technology and software solutions worldwide.</p>
@@ -100,10 +100,10 @@
         <img src="./engineer.png" alt="Secure DevOps Engineer">
       </div>
       <ul>
-        <li> Website loaded at: : 
+        <li> Website Loaded At: : 
           <strong><%= new java.util.Date() %></strong>
         </li>
-        <li> Remote IP Direction
+        <li> Client Remote IP Direction
            <strong><%= request.getRemoteAddr() %></strong>
         </li>
       </ul>
