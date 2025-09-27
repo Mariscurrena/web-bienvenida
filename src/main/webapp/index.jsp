@@ -72,6 +72,20 @@
       <img src="./GP.png" alt="Global Payments Logo">
     </div>
     <div class="container">
+      <%
+          java.util.Calendar calendar = java.util.Calendar.getInstance();
+          int hora = calendar.get(java.util.Calendar.HOUR_OF_DAY);
+          String greeting;
+
+          if (hora < 12) {
+              greeting = "Good Morning!";
+          } else if (hora < 18) {
+              greeting = "Good Afternoon!";
+          } else {
+              greeting = "Good Evening!";
+          }
+      %>
+      <h1><%= greeting %></h1>
       <h1>Your Partner in Payments</h1>
       <h2>This is a harness deployment test</h2>
       <p>Providing innovative payment technology and software solutions worldwide.</p>
@@ -80,12 +94,19 @@
           <li>Trigger set when making a push or pull request to the repository ✅</li>
           <li>SAST using Open Source (Provisional until Snyk release) ✅</li>
       </ul>
-      
       <div class="devops-section">
         <h2>Secure DevOps</h2>
         <p>Engineers, architects, and developers with a passion for security, guided by DevOps principles and the highest security standards. We aim to mitigate barriers between development and security, making the process more efficient and secure.</p>
         <img src="./engineer.png" alt="Secure DevOps Engineer">
       </div>
+      <ul>
+        <li> Website loaded at: : 
+          <strong><%= new java.util.Date() %></strong>
+        </li>
+        <li> Remote IP Direction
+           <strong><%= request.getRemoteAddr() %></strong>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
