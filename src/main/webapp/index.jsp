@@ -45,7 +45,7 @@
         max-width: 50%;
         height: auto;
         margin-top: 20px;
-        box-shadow: 0 4px 8px rgba(0, 122, 255, 0.3); 
+        filter: drop-shadow(0 4px 8px rgba(0, 122, 255, 0.3)); 
       }
     </style>
   </head>
